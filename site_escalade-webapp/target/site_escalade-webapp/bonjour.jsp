@@ -1,10 +1,12 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE HTML>
 <html>
 
 <head>
     <meta charset="utf-8">
-    <link href="${pageContext.request.contextPath}/webjars/bootstrap/4.4.1-1/css/bootstrap.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet">
+    <%@include file="/_include/navbar.jsp" %>
     <style type="text/css">
         body {
             background-color: #DDD;
@@ -22,37 +24,41 @@
             background-color: #CCC;
             padding: 20px;
         }
+
     </style>
 </head>
 
 <body>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Mon beau site</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Accueil</a></li>
+            <li><a href="#">Liens</a></li>
+            <li><a href="#">Témoignages</a></li>
+            <li><a href="#">Références</a></li>
+            <li><a href="#">Bibliographie</a></li>
+        </ul>
+    </div>
+</div>
 <div class="container">
     <header class="page-header">
-        <h1>Mon amour pour les tigres</h1>
+        <h1>Les amis de l'escalade</h1>
     </header>
     <section class="row">
         <div class="col-lg-12">
             <p>
-                Je suis passionné par les <strong>tigres</strong> depuis très longtemps. Ce site a été construit en <em>hommage
-                à ces merveilleux félins...</em><br>
-                Je fais partie de la <abbr title="Société des Amoureux des Tigres">SAT</abbr> qui a pour but de faire
-                connaître ces splendides animaux.
+                Ce site a été conçu pour tous les amateurs d'<strong>escalade</strong>, dans le but de leur permettre d'échanger autour de cette discipline et de pouvoir s'échanger des infos sur les sites de grimpes.
+
             </p>
             <p>Voici ce qu'en dit le wikipedia :</p>
             <blockquote class="blockquote text-right">
-                <p class="mb-0"> Le Tigre (Panthera tigris) est un mammifère carnivore de la famille des félidés
-                    (Felidae) du genre Panthera.
-                    Aisément reconnaissable à sa fourrure rousse rayée de noir, il est le plus grand félin sauvage et
-                    l'un des plus grands carnivores du monde.
-                    L'espèce est divisée en neuf sous-espèces possédant des différences mineures en termes de taille ou
-                    de comportement. Superprédateur,
-                    il chasse principalement les cerfs et les sangliers, bien qu'il puisse s'attaquer à des proies de
-                    taille plus importante comme les buffles.
-                    Jusqu'au XIXe siècle, le Tigre était réputé mangeur d'homme. La structure sociale des tigres en fait
-                    un animal solitaire ; le mâle possède
-                    un territoire qui englobe les domaines de plusieurs femelles et ne participe pas à l'éducation des
-                    petits.</p>
-                <footer class="blockquote-footer">Les Tigres <cite title="Tigres">Wikipedia</cite></footer>
+                <p class="mb-0"> L’escalade, ou grimpe, parfois appelée varappe (désuet), est une pratique et un sport consistant à progresser le long d'une paroi pour atteindre le haut d'un relief ou d'une structure artificielle par un cheminement appelé <abbr title="Une voie d'escalade est un cheminement par lequel un grimpeur atteint le haut d'une montagne, d'un rocher ou d'un mur de glace.">voie</abbr>, avec ou sans aide de matériel.
+                    Le terrain de pratique va des <abbr title="L’escalade de bloc, désignée comme le bloc dans le jargon des pratiquants, est une discipline sportive et un type d'escalade, consistant à grimper des blocs de faible hauteur. Le bloc se pratique aussi bien en extérieur sur des sites rocheux, qu'en intérieur sur des structures artificielles. Les pratiquants sont appelés « grimpeurs » ou plus précisément « bloqueurs ».">blocs</abbr> de faible hauteur aux parois de plusieurs centaines de mètres, en passant par les murs d'escalade. Le pratiquant est couramment appelé « grimpeur ».
+                    L'escalade développe de nombreuses qualités physiques, comme la force musculaire, la souplesse, l'endurance musculaire, l'équilibre, de bonnes capacités psychomotrices et de planification. Elle sollicite particulièrement la musculature des bras, du tronc et des jambes. </p>
+                <footer class="blockquote-footer">Escalade <cite title="Escalade">Wikipedia</cite></footer>
             </blockquote>
         </div>
     </section>

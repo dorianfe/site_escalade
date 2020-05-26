@@ -12,5 +12,8 @@
         <module name="site_escalade-business" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="site_escalate" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
